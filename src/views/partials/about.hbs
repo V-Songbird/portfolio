@@ -1,0 +1,43 @@
+<section class="about pb-5">
+  <div id="about"></div>
+  <div class="container">
+    <div class="d-flex">
+      <div class="col-12 col-md-7 col-lg-7" id="information">
+        <h3 class="title">ABOUT ME</h3>
+        <br>
+        <p>Hello, my name is Victor Villegas a self learning developer & designer that lives in Mexico. I studied
+          Mechatronics Engineer at the Valley of Mexico University (UVM). I love learning new things and methods to
+          improve
+          my work, beign perfectionist is part of me</p>
+        <br>
+        <br>
+        <p>I am currently working in Ksquare University as a Javascript Associate Software Engineer, I also have
+          experiences
+          as a team coach, graphic designer and video game developer</p>
+        <br>
+        <br>
+        <p>As an autodidact person, I have earned lots of unique skills that makes of me a responsible and
+          multidisciplinary
+          person able to work under pressure with critical thinking and respect for what I'm doing</p>
+      </div>
+      <div class="d-none d-md-flex row pl-3 col-md-5 col-lg-5 about-right pt-5" id="info-table">
+        {{#each info}}
+        <div class="about-element">
+
+          <div class="about-section mt-4">
+            <p class="ml-3">{{ ./title }}</p>
+          </div>
+
+          {{#each ./data}}
+
+          <div class="about-info">
+            <p class="ml-4 my-2"><span>{{{ @key }}}:</span> {{{ . }}}</p>
+          </div>
+
+          {{/each}}
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>

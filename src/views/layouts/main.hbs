@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/ico" href="img/favicon.ico">
+
+  <title>{{ title }} - Victor Villegas</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway&family=Poppins&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="https://kit.fontawesome.com/9806a60018.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js"></script>
+
+  {{!--
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://unpkg.com/@barba/css"></script> --}}
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.0/mixitup.min.js"></script>
+</head>
+
+<body data-barba="wrapper">
+  {{> navigation}}
+
+  <main data-barba="container" id="barba-container">
+    {{!-- <div class="over-block d-flex justify-content-center align-items-center container-fluid">
+      <div class="intro-circle"></div>
+    </div> --}}
+    {{{ body }}}
+  </main>
+</body>
+
+<script src="js/{{ javascript }}.js"></script>
+
+</html>
